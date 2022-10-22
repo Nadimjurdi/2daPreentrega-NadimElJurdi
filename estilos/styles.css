@@ -10,6 +10,7 @@ h1{
 }
 
 /*      PROMOCIONES     */
+
 .promociones{
     background-color: violet;
     width: 100vw;
@@ -49,53 +50,8 @@ h1{
     padding: 2px 0 -5px 0;
 }
 
-
-
-
 /*      PUBLICIDAD      */
-/*.publicidad{
-    border-bottom: 2px black solid;
-    display: grid;
-    grid-template-areas:
-    "publicidad1 publicidad2 publicidad3"
-    "publicidad1 texto texto";
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows:repeat(2,1fr);
-}
-#publicidad1{
-    grid-area: publicidad1;
-}
-#publicidad2{
-    grid-area: publicidad2;
-}
-#publicidad3{
-    grid-area: publicidad3;
-}
-#texto{
-    grid-area: texto;
-}
-#mas_vendidos{
-    grid-area: mas_vendidos;
-}
-.publicidad1 .carousel{
-    width: 20vw;
-}
-presentacion__temporada, .presentacion__temporada img {
-    width: 30vw;
-    margin: 20px;
 
-}
-.segunda_foto_publicidad, .segunda_foto_publicidad img {
-    width: 15vw;
-}
-.texto a{
-    background-color: violet;
-    padding: 5px;
-    border-radius: 50%;
-}
-*/
-
-/*      PUBLICIDAD      */
 .publicidad{
     border-bottom: 2px black solid;
     display: grid;
@@ -129,6 +85,7 @@ presentacion__temporada, .presentacion__temporada img {
 }
 
 /*       IMAGENES       */
+
 .publicidad .carousel .carousel-inner{
     width:30vw;
     border-radius: 10px;
@@ -196,6 +153,7 @@ presentacion__temporada, .presentacion__temporada img {
 }
 
 /*      MAS VENDIDOS        */
+
 .mas_vendidos .img{
     display: flex;
     overflow-x: scroll;
@@ -219,7 +177,6 @@ presentacion__temporada, .presentacion__temporada img {
 .footer{
     border-top: 2px solid black;
 }
-
 
 
 /*                      PAGINAS                     */
