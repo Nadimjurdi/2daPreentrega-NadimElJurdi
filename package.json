@@ -1,0 +1,23 @@
+{
+  "name": "3rapreentrega-nadimeljurdi",
+  "version": "1.0.0",
+  "description": "Tercera Preentrega Nadim El Jurdi Desarrollo Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nadimjurdi/2daPreentrega-NadimElJurdi.git"
+  },
+  "author": "Nadim El Jurdi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nadimjurdi/2daPreentrega-NadimElJurdi/issues"
+  },
+  "homepage": "https://github.com/Nadimjurdi/2daPreentrega-NadimElJurdi#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
