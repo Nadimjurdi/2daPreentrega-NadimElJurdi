@@ -1,0 +1,379 @@
+@import "variables-y-otros";
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+/*      PROMOCIONES     */
+
+.promociones {
+    background-color: violet;
+    width: 100%;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 2px black solid;
+    margin: 0;
+    padding: 0;
+
+    img {
+        width: 4vw;
+    }
+}
+
+
+/*      BARRA DE ENLACES        */
+.barra_busqueda {
+    border-bottom: 2px black solid;
+
+    ul {
+        li {
+            img {
+                width: 5vw;
+            }
+        }
+    }
+}
+
+
+.carrito {
+    margin: 1vw;
+    border: 2px black solid;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.barra__derecha {
+    display: flex;
+
+    &__account {
+        div {
+            padding: 3px;
+            border-radius: 20%;
+            background-color: violet;
+            color: white;
+            font-weight: bolder;
+            padding: 2px 0 -5px 0;
+        }
+    }
+}
+
+
+/*      PUBLICIDAD      */
+
+.publicidad {
+    border-bottom: 2px black solid;
+    display: grid;
+    grid-template-areas:
+        "publicidad1 publicidad2 publicidad3"
+        "publicidad1 texto texto"
+        "mas_vendidos mas_vendidos mas_vendidos"
+        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+
+    #publicidad1 {
+        grid-area: publicidad1;
+    }
+
+    #publicidad2 {
+        grid-area: publicidad2;
+    }
+
+    #publicidad3 {
+        grid-area: publicidad3;
+    }
+
+    #texto {
+        grid-area: texto;
+    }
+
+    #mas_vendidos {
+        grid-area: mas_vendidos;
+    }
+
+    /*       IMAGENES       */
+
+    &__1 {
+        &__1 {
+            width: 30vw;
+            border-radius: 10px;
+            box-shadow: $box-shadow-img;
+            margin: 1vw;
+        }
+    }
+
+    &__2 {
+        img {
+            width: 35vw;
+        }
+    }
+
+    &__3 {
+        img {
+            width: 20vw;
+            margin: 2vw;
+            border-radius: 10px;
+            box-shadow: $box-shadow-img;
+
+            &:hover {
+                animation: mover 2s;
+                animation-iteration-count: infinite;
+
+                @keyframes mover {
+                    0% {
+                        transform: translate(1px, 1px) rotate(0deg);
+                    }
+
+                    10% {
+                        transform: translate(-1px, -2px) rotate(-1deg);
+                    }
+
+                    20% {
+                        transform: translate(-3px, 0px) rotate(10deg);
+                    }
+
+                    30% {
+                        transform: translate(3px, 2px) rotate(0deg);
+                    }
+
+                    40% {
+                        transform: translate(1px, -1px) rotate(10deg);
+                    }
+
+                    50% {
+                        transform: translate(-1px, 2px) rotate(-5deg);
+                    }
+
+                    60% {
+                        transform: translate(-3px, 1px) rotate(0deg);
+                    }
+
+                    70% {
+                        transform: translate(3px, 1px) rotate(-10deg);
+                    }
+
+                    80% {
+                        transform: translate(-1px, 2px) rotate(-5deg);
+                    }
+
+                    90% {
+                        transform: translate(-1px, 2px) rotate(-10deg);
+                    }
+
+                    100% {
+                        transform: translate(-1px, 2px) rotate(10deg);
+                    }
+                }
+            }
+        }
+
+    }
+
+    /*    TEXTO     */
+
+    p {
+        a {
+            border-radius: 50%;
+            background-color: violet;
+            padding: 5px;
+        }
+    }
+}
+
+
+/*      MAS VENDIDOS        */
+
+.mas_vendidos .img {
+    display: flex;
+    overflow-x: scroll;
+
+    a {
+        width: 15vw;
+        padding-bottom: 2vh;
+        border: 2px solid black;
+        margin: 1vw;
+        font-weight: bolder;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div {
+        img {
+            width: 14.8vw;
+            border-radius: 10px;
+        }
+    }
+}
+
+/*      FOOTER      */
+.footer {
+    border-top: 2px solid black;
+}
+
+/*                      PAGINAS                     */
+
+
+/*      JOURNAL     */
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__notas {
+        width: 48vw;
+        margin: 10px;
+
+        &__1 {
+
+            p,
+            small {
+                color: rgb(247, 54, 150);
+                font-style: oblique;
+                font-weight: bolder;
+                font-family: sans-serif;
+            }
+        }
+    }
+
+    &__transicion {
+        transition: all 0.1s;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+/*      NOTICIAS PRONTAS        */
+
+.noticias__prontas h3 {
+    border-top: 2px solid black;
+    font-size: 7rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(../imagenes/planeta-tierra.jpg);
+    text-align: center;
+}
+
+
+/*      COLLECTION      */
+
+
+.comingsoon {
+    display: flex;
+    flex-direction: row;
+
+    /* Left */
+    &__left {
+        margin: 2vw;
+        box-shadow: $box-shadow-img;
+        width: 30vw;
+        height: 40vw;
+
+        img {
+            width: 30vw;
+            height: 100%;
+        }
+    }
+
+    /*Middle */
+    &__middle {
+        @include flex-column;
+
+        a {
+            background-color: violet;
+            padding: 5px;
+            border-radius: 20px;
+            color: whitesmoke;
+            font-weight: bolder;
+            box-shadow: $box-shadow-img;
+        }
+
+        &__texto {
+            font-size: 1rem;
+        }
+
+        &__row {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 30vw;
+                margin: 5vw;
+                box-shadow: $box-shadow-img;
+            }
+
+            &__tittle {
+                font-size: 3rem;
+                @include flex-column;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: greenyellow;
+
+                span {
+                    font-size: 3rem;
+                    text-align: end;
+                }
+            }
+        }
+    }
+}
+
+/*         ABOUT US          */
+
+.presentation {
+    width: 100%;
+    height: 400px;
+    border-bottom: 2px solid black;
+    display: flex;
+
+    img {
+        margin-top: 35px;
+        height: 250px;
+    }
+
+    p {
+        margin-top: 35px;
+    }
+}
+
+.contactus,
+.cuenta {
+    @include flex-column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.contactus h2,
+.cuenta h2 {
+    font-size: 35px;
+}
+
+.contactus h6,
+.cuenta h6 {
+    font-size: 15px;
+}
+
+.contactus input,
+.cuenta input {
+    width: 30%;
+    border-radius: 10px;
+    height: 30px;
+    background-color: gray;
+    opacity: 50%;
+
+
+}
+
+/*            ACCOUNT         */
+
+
+
+/* Se añadio los estilos de contactus porque es muy parecidPS       */
+
+@import "seccion-responsiva";

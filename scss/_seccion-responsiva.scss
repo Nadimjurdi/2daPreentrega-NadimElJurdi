@@ -1,0 +1,130 @@
+/*              SECCION RESPONSIVA          */
+
+@media screen and (max-width:768px) {
+
+    /*      SHOP        */
+    .promociones img {
+        width: 5vw;
+    }
+
+    .barra__derecha {
+        @include flex-column;
+        margin-bottom: 20px;
+    }
+
+    .mas_vendidos .img a {
+        width: 23vw;
+    }
+
+    .mas_vendidos .img div img {
+        width: 22.5vw;
+    }
+
+    /*      ABOUT US        */
+    .presentation {
+        @include flex-column;
+        align-items: center;
+        margin: 2vw;
+
+        img {
+            width: 40vw;
+            height: 30vw;
+
+        }
+    }
+
+    /*      COLLECTION      */
+    .comingsoon {
+        flex-wrap: wrap;
+        margin: 2vw;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:320px) {
+
+    /*      SHOP        */
+    .promociones img {
+        width: 10vw;
+    }
+
+    .barra_busqueda ul>li img {
+        width: 25vw;
+    }
+
+
+    .publicidad {
+        grid-template-areas:
+            "publicidad1"
+            "texto"
+            "publicidad2";
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        &__1 {
+            width: 40vw;
+
+            &__1 {
+                width: 40vw;
+                margin: 20px auto;
+            }
+        }
+
+        &__2 img {
+            justify-content: center;
+            width: 70vw;
+        }
+
+        &__3 {
+            width: 0;
+            height: 0;
+        }
+
+        p {
+            text-align: center;
+            width: 80vw;
+        }
+    }
+
+    .mas_vendidos .img {
+        a {
+            width: 40vw;
+        }
+
+        div img {
+            width: 39vw;
+        }
+    }
+
+    /*      JOURNAL     */
+    .noticias__notas {
+        width: 100%;
+    }
+
+    .noticias__prontas h3 {
+        font-size: 5rem;
+    }
+
+    /*      ABOUT US        */
+    .presentation {
+        @include flex-column;
+        align-items: center;
+        margin: 2vw;
+
+        img {
+            width: 40vw;
+            height: 30vw;
+
+        }
+    }
+
+    /*      COLLECTION      */
+    .comingsoon__middle .comingsoon__middle__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}

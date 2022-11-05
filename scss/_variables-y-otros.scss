@@ -1,0 +1,9 @@
+$color-1-group-1: grey;
+$color-2-group-1: violet;
+$color-3-group-1: black;
+$box-shadow-img: 2px 2px 5px 1px grey;
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
