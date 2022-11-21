@@ -10,19 +10,27 @@ h1 {
 .promociones {
   background-color: violet;
   width: 100%;
+  font-size: 2rem;
   font-weight: bolder;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-bottom: 2px black solid;
   margin: 0;
   padding: 0; }
-  .promociones img {
-    width: 4vw; }
+  .promociones nav {
+    width: 100%; }
+    .promociones nav img {
+      width: 7%; }
 
 /*      BARRA DE ENLACES        */
 .barra_busqueda {
-  border-bottom: 2px black solid; }
-  .barra_busqueda ul li img {
-    width: 5vw; }
+  border-bottom: 2px black solid;
+  width: 100%; }
+  .barra_busqueda__separador {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .barra_busqueda__separador ul li img {
+      width: 10vw; }
 
 .carrito {
   margin: 1vw;
@@ -139,9 +147,10 @@ h1 {
       font-weight: bolder;
       font-family: sans-serif; }
   .noticias__transicion {
-    transition: all 0.1s; }
+    transition: all 0.7s; }
     .noticias__transicion:hover {
-      transform: rotate(360deg); }
+      transform: scale(1.1);
+      border: 2px black solid; }
 
 /*      NOTICIAS PRONTAS        */
 .noticias__prontas h3 {
@@ -227,7 +236,7 @@ h1 {
   width: 30%;
   border-radius: 10px;
   height: 30px;
-  background-color: gray;
+  background-color: grey;
   opacity: 50%; }
 
 /*            ACCOUNT         */
@@ -236,7 +245,12 @@ h1 {
 @media screen and (max-width: 768px) {
   /*      SHOP        */
   .promociones img {
-    width: 5vw; }
+    width: 10vw; }
+  .barra_busqueda .barra_busqueda__separador {
+    display: flex;
+    flex-direction: column; }
+    .barra_busqueda .barra_busqueda__separador div nav ul > li img {
+      width: 20vw; }
   .barra__derecha {
     display: flex;
     flex-direction: column;
@@ -245,6 +259,9 @@ h1 {
     width: 23vw; }
   .mas_vendidos .img div img {
     width: 22.5vw; }
+  /*      JOURNAL         */
+  .noticias .noticias__notas {
+    width: 90vw; }
   /*      ABOUT US        */
   .presentation {
     display: flex;
@@ -262,9 +279,9 @@ h1 {
 @media screen and (max-width: 320px) {
   /*      SHOP        */
   .promociones img {
-    width: 10vw; }
-  .barra_busqueda ul > li img {
-    width: 25vw; }
+    width: 12vw; }
+  .barra_busqueda .barra_busqueda__separador div nav ul > li img {
+    width: 30vw; }
   .publicidad {
     grid-template-areas: "publicidad1" "texto" "publicidad2";
     grid-template-columns: 1fr;
@@ -277,7 +294,7 @@ h1 {
     .publicidad__2 img {
       justify-content: center;
       width: 70vw; }
-    .publicidad__3 {
+    .publicidad__3 img {
       width: 0;
       height: 0; }
     .publicidad p {

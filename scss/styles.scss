@@ -14,29 +14,39 @@ h1 {
 .promociones {
     background-color: $color-2-group-1;
     width: 100%;
+    font-size: 2rem;
     font-weight: bolder;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-bottom: 2px $color-3-group-1 solid;
     margin: 0;
     padding: 0;
 
-    img {
-        width: 4vw;
+    nav{
+        width: 100%;
+        img {
+        width: 7%;
     }
 }
+}   
 
 
 /*      BARRA DE ENLACES        */
 .barra_busqueda {
     border-bottom: 2px $color-3-group-1 solid;
+    width: 100%;
 
-    ul {
+    &__separador{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        ul{
         li {
             img {
-                width: 5vw;
+                width: 10vw;
             }
         }
     }
+}
 }
 
 
@@ -241,10 +251,11 @@ h1 {
     }
 
     &__transicion {
-        transition: all 0.1s;
+        transition: all 0.7s;
 
         &:hover {
-            transform: rotate(360deg);
+            transform: scale(1.1);
+            border: 2px black solid;
         }
     }
 }

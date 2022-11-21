@@ -3,10 +3,17 @@
 @media screen and (max-width:768px) {
 
     /*      SHOP        */
-    .promociones img {
-        width: 5vw;
-    }
+    .promociones img{
+        width: 10vw;
+    } 
 
+    
+    .barra_busqueda .barra_busqueda__separador{
+       @include flex-column;   
+       div nav ul>li img{
+        width: 20vw;
+       }  
+    }
     .barra__derecha {
         @include flex-column;
         margin-bottom: 20px;
@@ -20,6 +27,10 @@
         width: 22.5vw;
     }
 
+    /*      JOURNAL         */
+    .noticias .noticias__notas{
+        width: 90vw;
+    }
     /*      ABOUT US        */
     .presentation {
         @include flex-column;
@@ -48,11 +59,11 @@
 
     /*      SHOP        */
     .promociones img {
-        width: 10vw;
+        width: 12vw;
     }
 
-    .barra_busqueda ul>li img {
-        width: 25vw;
+    .barra_busqueda .barra_busqueda__separador div nav ul>li img {
+        width: 30vw;
     }
 
 
@@ -78,9 +89,10 @@
             width: 70vw;
         }
 
-        &__3 {
+        &__3 img{
             width: 0;
             height: 0;
+
         }
 
         p {
